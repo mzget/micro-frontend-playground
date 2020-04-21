@@ -1,0 +1,73 @@
+{
+    "messageCode": "00",
+    "messageSubCode": "",
+    "messageDescription": "SUCCESS",
+    "menus": [
+        {
+            "ID": "598d4d1ac351d3ad26375ba7",
+            "name": "customer",
+            "desc": "Customer Management",
+            "show": "Y"
+        },
+        {
+            "ID": "598d4d1ac351d3ad26375ba9",
+            "name": "merchant",
+            "desc": "K+ Shop Management",
+            "show": "Y"
+        },
+        {
+            "ID": "598d4d1ac351d3ad26375bae",
+            "name": "promotion",
+            "desc": "Promotion",
+            "show": "Y"
+        },
+        {
+            "ID": "598d4d1ac351d3ad26375baf",
+            "name": "auditLog",
+            "desc": "Audit Log",
+            "show": "Y"
+        },
+        {
+            "ID": "5a1d301b21c4825392de0845",
+            "name": "edc",
+            "desc": "EDC",
+            "show": "Y"
+        },
+        {
+            "ID": "5a73f51536c57c230733b8e8",
+            "name": "setting",
+            "desc": "Setting",
+            "show": "Y"
+        },
+        {
+            "ID": "5aa0bfc08ab3f7fc0ca88846",
+            "name": "privilege",
+            "desc": "Credit Card Redemption",
+            "show": "Y"
+        },
+        {
+            "ID": "5ab2065e4234abad74efa356",
+            "name": "loyalty",
+            "desc": "Loyalty",
+            "show": "Y"
+        },
+        {
+            "ID": "5b83d25c5d682c8ff02e12d4",
+            "name": "merchant-promotion",
+            "desc": "Merchant Promotion",
+            "show": "Y"
+        },
+        {
+            "ID": "5d80523167542806ec57050d",
+            "name": "jcb",
+            "desc": "JCB Management",
+            "show": "Y"
+        },
+        {
+            "ID": "5da95c27055dc53860ee2666",
+            "name": "image_review",
+            "desc": "Image Review",
+            "show": "Y"
+        }
+    ]
+}
