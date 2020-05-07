@@ -24,10 +24,6 @@ let AsyncException = loadable({
   loader: () => import("common/components/routes/exception/"),
   loading: LoadingComponent,
 });
-let AsyncAccount = loadable({
-  loader: () => import("features/auth"),
-  loading: LoadingComponent,
-});
 
 export default function AppRoute({ match, location }) {
   const isRoot = location.pathname === "/" ? true : false;
@@ -44,7 +40,6 @@ export default function AppRoute({ match, location }) {
         <AsyncAppLayout sideMenu={<Menu />} />
       </ProtectedRoute>
       <Route path={`${match.url}exception`} component={AsyncException} />
-      <Route path={`${match.url}user`} component={AsyncAccount} />
     </div>
   );
 }

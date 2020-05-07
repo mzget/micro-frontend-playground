@@ -11,6 +11,9 @@ module.exports = (webpackConfigEnv) => {
 
   return webpackMerge.smart(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
+    devServer: {
+      port: 8080,
+    },
     resolve: { modules: [path.resolve(__dirname, "./src"), "node_modules"] },
     module: {
       rules: [

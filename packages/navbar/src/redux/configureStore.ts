@@ -17,7 +17,7 @@ const epicMiddleware = createEpicMiddleware();
 const persistConfig = {
   key: "bo-container",
   storage,
-  whitelist: ["auth", "persist"],
+  whitelist: ["persist"],
 };
 const persistedReducer = persistReducer(
   persistConfig,
@@ -65,7 +65,7 @@ function configureStoreDev(initialState: any) {
   const store = createStore(
     persistedReducer,
     initialState,
-    composeWithDevTools(applyMiddleware(...middlewares))
+    composeWithDevTools({ name: "nav-app" })(applyMiddleware(...middlewares))
   );
 
   epicMiddleware.run(rootEpic);

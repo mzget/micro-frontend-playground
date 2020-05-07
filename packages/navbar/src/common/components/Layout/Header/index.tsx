@@ -18,7 +18,7 @@ import {
 } from "redux/actions/settingsActions";
 import AvatarDropdown from "./AvartarDrowdown";
 import { AppStateType } from "common/types";
-import { logoutAction } from "features/auth/actions/logoutAction";
+import { logoutAction } from "redux/actions/auth/logoutAction";
 
 const { Header } = Layout;
 
@@ -121,7 +121,6 @@ const mapStateToProps = (state: AppStateType) => ({
   offCanvasMobileNav: state.settings.offCanvasMobileNav,
   collapsedNav: state.settings.collapsedNav,
   colorOption: state.settings.colorOption,
-  username: state.auth.username,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -132,7 +131,7 @@ const mapDispatchToProps = (dispatch) => ({
     dispatch(toggleOffCanvasMobileNav(isOffCanvasMobileNav));
   },
   logoutHandler: () => {
-    dispatch(logoutAction());
+    logoutAction();
   },
 });
 

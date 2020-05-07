@@ -5,7 +5,6 @@ import settingsReducer from "./settingsReducer";
 import { persistantReducer } from "./persistantReducer";
 import { contextReducer } from "./contextReducer";
 import { permissionReducer } from "./permission/permissionReducer";
-import { authReducer } from "features/auth/reducers/authReducer";
 
 const createRootReducer = (history: any) =>
   combineReducers({
@@ -13,8 +12,7 @@ const createRootReducer = (history: any) =>
     settings: settingsReducer,
     context: contextReducer,
     persist: persistantReducer,
-    permission: permissionReducer,
-    auth: authReducer,
+    permission: permissionReducer
   });
 
 export default createRootReducer;

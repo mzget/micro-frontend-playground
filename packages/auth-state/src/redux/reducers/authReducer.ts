@@ -1,13 +1,13 @@
 import { createAction } from "redux-actions";
 import produce from "immer";
-import { ActionType, ActionPayload, AUTHObjectType } from "common/types";
+import { ActionType, ActionPayload, AUTHObjectType } from "../../types";
 
 export const LOGIN = "auth/login";
 export const LOGIN_FINISH = "auth/loginFinish";
 export const login = createAction(LOGIN);
 export const loginFinish = createAction<ActionPayload>(LOGIN_FINISH);
 
-const LOGOUT = "auth/logout";
+export const LOGOUT = "auth/logout";
 export const LOGOUT_FINISH = "auth/logoutFinish";
 export const logout = createAction(LOGOUT);
 export const logoutFinish = createAction<ActionPayload>(LOGOUT_FINISH);
