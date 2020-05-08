@@ -13,7 +13,7 @@ import "./App.css";
 
 export default function Root(props) {
   return (
-    <div className="App">
+    <div className="navbar-app">
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <ConnectedRouter history={history}>

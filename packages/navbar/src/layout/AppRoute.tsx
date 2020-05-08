@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import loadable from "react-loadable";
+import Parcel from "single-spa-react/parcel";
+
 import LoadingComponent from "common/components/Loading";
 import ProtectedRoute from "common/components/routes/ProtectedRoute";
 
@@ -20,10 +22,14 @@ let AsyncAppLayout = loadable({
   loader: () => import("common/components/Layout/AppLayout/"),
   loading: LoadingComponent,
 });
-let AsyncException = loadable({
-  loader: () => import("common/components/routes/exception/"),
-  loading: LoadingComponent,
-});
+
+const ParcelApp = (props) => (
+  <Parcel
+    config={() => System.import("@mzsoft/exception-parcel")}
+    wrapWith="div"
+    {...props}
+  />
+);
 
 export default function AppRoute({ match, location }) {
   const isRoot = location.pathname === "/" ? true : false;
@@ -39,7 +45,7 @@ export default function AppRoute({ match, location }) {
       <ProtectedRoute path={`${match.url}app`}>
         <AsyncAppLayout sideMenu={<Menu />} />
       </ProtectedRoute>
-      <Route path={`${match.url}exception`} component={AsyncException} />
+      <Route path={`${match.url}exception`} component={ParcelApp} />
     </div>
   );
 }
