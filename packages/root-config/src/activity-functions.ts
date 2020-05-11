@@ -13,3 +13,7 @@ export function navbar(location) {
 export function auth(location) {
   return prefix(location, "user");
 }
+
+export function angular(location) {
+  return location.href.includes("/angular");
+}

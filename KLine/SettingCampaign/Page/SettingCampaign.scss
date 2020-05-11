@@ -1,0 +1,106 @@
+.setting-campaign {
+    width: 100%;
+    height: 100%;
+    > .content {
+        background-color: #ffffff;
+        padding: 8px;
+        border-radius: 8px;
+        .campaign-configuration {
+            > .promotion-code-method {
+                > .header {
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-bottom: 16px;
+                }
+                > .radio-wrap {
+                    margin-bottom: 16px;
+                }
+            }
+            > .campaign-channel {
+                > .header {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                > .description {
+                    color: gray;
+                    white-space: pre-wrap;
+                }
+                > .radio-wrap {
+                    margin: 8px 0;
+                }
+            }
+            > .transaction-type {
+                > .header {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                > .checkbox-wrap {
+                    margin: 8px 0;
+                }
+            }
+            > .rc {
+                > .header {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+                > .select-wrap {
+                    margin: 8px 0;
+                }
+            }
+        }
+        .campaign-paticipant {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    .page-action {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .action {
+            margin: 8px;
+        }
+    }
+
+    .ant-transfer-operation {
+        margin: 0 4px;
+    }
+    .ant-transfer-list {
+        width: 45%;
+    }
+    .ant-form-item {
+        margin-bottom: 0px;
+    }
+    .form-item {
+        width: 100%;
+    }
+    .form-row {
+        display: flex;
+        flex-direction: row;
+    }
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .left {
+        padding-right: 16px;
+        border-right: 1px solid #d9d9d9;
+    }
+    .right {
+        padding-left: 16px;
+    }
+    .only-extra {
+        margin-top: -24px;
+    }
+}
+.section {
+    > .header {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+}

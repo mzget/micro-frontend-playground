@@ -1,6 +1,7 @@
 {
   "name": "@mzsoft/root-config",
   "scripts": {
+    "start-mf": "npm start",
     "start": "webpack-dev-server --mode=development --port 9000 --env.isLocal=true",
     "lint": "eslint src --ext js,ts,tsx",
     "test": "jest",

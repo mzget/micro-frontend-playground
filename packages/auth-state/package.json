@@ -1,6 +1,7 @@
 {
   "name": "@mzsoft/auth-state",
   "scripts": {
+    "start-mf": "npm start",
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
     "analyze": "webpack --mode=production --env.analyze=true",
