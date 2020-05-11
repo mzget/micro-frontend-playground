@@ -1,4 +1,5 @@
 {
+  "name": "@mzsoft/navbar",
   "scripts": {
     "start": "webpack-dev-server --port 8080",
     "build": "webpack --mode=production",

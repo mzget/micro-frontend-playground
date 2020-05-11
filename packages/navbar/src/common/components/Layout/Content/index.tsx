@@ -8,11 +8,6 @@ import Parcel from "single-spa-react/parcel";
 import LoadingComponent from "common/components/Loading";
 const { Content } = Layout;
 
-let AsyncException = loadable({
-  loader: () => import("common/components/routes/exception/"),
-  loading: LoadingComponent,
-});
-
 function Micro(props) {
   return (
     <iframe
