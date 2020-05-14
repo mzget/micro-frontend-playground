@@ -18,11 +18,11 @@ registerApplication({
   activeWhen: isActive.auth,
 });
 
-// registerApplication({
-//   name: "@mzsoft/angular-app",
-//   app: () => System.import("@mzsoft/angular-app"),
-//   activeWhen: isActive.angular,
-// });
+registerApplication({
+  name: "@mzsoft/kline-app",
+  app: () => System.import("@mzsoft/kline-app"),
+  activeWhen: isActive.isKline,
+});
 
 start();
 

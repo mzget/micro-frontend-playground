@@ -5,8 +5,15 @@ import loadable from "react-loadable";
 import { Layout } from "antd";
 import Parcel from "single-spa-react/parcel";
 
-import LoadingComponent from "common/components/Loading";
 const { Content } = Layout;
+
+const InstantRedemtion = (props) => (
+  <Parcel
+    config={() => System.import("@mzsoft/kline-app")}
+    wrapWith="div"
+    {...props}
+  />
+);
 
 const AngularApp = (props) => (
   <Parcel
@@ -30,6 +37,10 @@ class AppContent extends React.Component<any> {
 
     return (
       <Content id="app-content">
+        <Route
+          path={`${match.url}/instant_redemption`}
+          component={InstantRedemtion}
+        />
         <Route path={`${match.url}/angular`} component={AngularApp} />
         <Route path={`${match.url}/exception`} component={ParcelApp} />
       </Content>

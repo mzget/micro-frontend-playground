@@ -17,3 +17,7 @@ export function auth(location) {
 export function angular(location) {
   return location.href.includes("/angular");
 }
+
+export function isKline(location) {
+  return location.href.includes("/instant_redemption");
+}
