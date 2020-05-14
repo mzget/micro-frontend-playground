@@ -1,5 +1,4 @@
 export function prefix(location, ...prefixes) {
-  console.log(location, ...prefixes);
   return prefixes.some(
     (prefix) => location.href.indexOf(`${location.origin}/#/${prefix}`) !== -1
   );

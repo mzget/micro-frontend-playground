@@ -1,0 +1,24 @@
+export type TransactionLogType = {
+    promo_code: string;
+    campaign: string;
+    campaign_type: string;
+    card_number: string;
+    account_no: string;
+    mid: string;
+    merchant_name: string;
+    merchant_category_code: string;
+    payment_amount_original_currency: string;
+    original_currency_code: string;
+    payment_amount: string;
+    payment_date_time: string;
+    settlement_at: string;
+    auth_code: string;
+    pos_entry_code: string;
+    payment_channels: string;
+    cashback_amount: string;
+    cashback_date: string;
+    rc_code: string;
+    pcb_status_code: string;
+    pcb_error_desc: string;
+    eban_created_at: string;
+};

@@ -1,13 +1,12 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { withRouter } from "react-router";
-import loadable from "react-loadable";
 import { Layout } from "antd";
 import Parcel from "single-spa-react/parcel";
 
 const { Content } = Layout;
 
-const InstantRedemtion = (props) => (
+const InstantKline = (props) => (
   <Parcel
     config={() => System.import("@mzsoft/kline-app")}
     wrapWith="div"
@@ -27,6 +26,7 @@ const ParcelApp = (props) => (
   <Parcel
     config={() => System.import("@mzsoft/exception-parcel")}
     wrapWith="div"
+    handleError={(e) => console.log("parcel err", e)}
     {...props}
   />
 );
@@ -38,8 +38,8 @@ class AppContent extends React.Component<any> {
     return (
       <Content id="app-content">
         <Route
-          path={`${match.url}/instant_redemption`}
-          component={InstantRedemtion}
+          path={`${match.url}/instant_redemption/kline`}
+          component={InstantKline}
         />
         <Route path={`${match.url}/angular`} component={AngularApp} />
         <Route path={`${match.url}/exception`} component={ParcelApp} />

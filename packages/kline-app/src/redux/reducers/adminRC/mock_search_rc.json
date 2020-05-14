@@ -1,0 +1,20 @@
+{
+    "message_code": "0000",
+    "message_description": "Success",
+    "data": {
+        "RC_CD": "",
+        "EFF_DT": "2019-02-01T00:00:00.000Z",
+        "EN_CNTR_NM": "Relationship Banker Team-Thanon Phrom Thep Ubon Ratchathani Team 6",
+        "EN_CNTR_NM_ABR": "NW.",
+        "TH_CNTR_NM": "ทีมบริหารความสัมพันธ์ลูกค้า ถนนพรหมเทพ อุบลราชธานี ทีม 6",
+        "TH_CNTR_NM_ABR": "คธ.",
+        "RC_TP_CD": "O",
+        "KBNK_BR_NO": "",
+        "EFF_ST_CD": "A",
+        "CRT_DT": "2019-02-01T00:00:00",
+        "END_DT": "",
+        "LAST_UDT_DT": "2019-01-29T00:00:00",
+        "PPN_TMS": "2020-01-19T21:00:31",
+        "allow_add": false
+    }
+}

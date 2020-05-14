@@ -2,7 +2,7 @@ import "./set-public-path";
 import React from "react";
 import ReactDOM from "react-dom";
 import singleSpaReact from "single-spa-react";
-import Root from "./exception/index";
+import Root from "./exception";
 
 const lifecycles = singleSpaReact({
   React,
@@ -11,3 +11,4 @@ const lifecycles = singleSpaReact({
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
+export { Page404Wrapper } from "./exception";

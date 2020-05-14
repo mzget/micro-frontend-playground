@@ -1,0 +1,127 @@
+{
+    "messageCode": "00",
+    "messageSubCode": "",
+    "messageDescription": "",
+    "data": [
+        {
+            "id": "5bbada11e5d9b52afc250c43",
+            "card_name": "AirAsia BIG Loyalty",
+            "composite_name": "[ AAB ] Air Asia BIG Loyalty",
+            "third_party": "aab"
+        },
+        {
+            "id": "5bac5d7ae5d9b52afc250c0d",
+            "card_name": "AIS Points",
+            "composite_name": "[ AIS ] AIS Point",
+            "third_party": "ais"
+        },
+        {
+            "id": "5dcbd7d121388d76926f3b45",
+            "card_name": "Bangchak Member Card",
+            "composite_name": "[BCP] Bangchak Member Card",
+            "third_party": "bangchak"
+        },
+        {
+            "id": "5d39262de5d9b5227c6fac1a",
+            "card_name": "Boonthavorn Family",
+            "composite_name": "[ BTV ] Boonthavorn Family",
+            "third_party": "boonthavorn"
+        },
+        {
+            "id": "5bebe068e5d9b503dc790b49",
+            "card_name": "Boots Advantage Card",
+            "composite_name": "[BOOTS] Boots",
+            "third_party": "boots"
+        },
+        {
+            "id": "5cf9cf7ae5d9b50dec91b1cf",
+            "card_name": "BANANA LEAF",
+            "composite_name": "[CHOCO] BANANA LEAF",
+            "third_party": "choco_banana_leaf"
+        },
+        {
+            "id": "5cfa0919b68630c910419eb9",
+            "card_name": "GYU-YA YAKINIKU",
+            "composite_name": "[CHOCO] GYU-YA YAKINIKU",
+            "third_party": "choco_gyuya_yakiniku"
+        },
+        {
+            "id": "5cf9e113b68630c91038f7df",
+            "card_name": "KAGONOYA",
+            "composite_name": "[CHOCO] KAGONOYA",
+            "third_party": "choco_kagonoya"
+        },
+        {
+            "id": "5cf9e449b68630c91039ac85",
+            "card_name": "Milch",
+            "composite_name": "[CHOCO] Milch",
+            "third_party": "choco_milch"
+        },
+        {
+            "id": "5db16654257b8a9671dceb0f",
+            "card_name": "JD POINTS",
+            "composite_name": "[JDC] JD POINTS",
+            "third_party": "jdc"
+        },
+        {
+            "id": "5e03228a21388d7692ee40e7",
+            "card_name": "KS Amazing Point by KSecurities",
+            "composite_name": "[KS] KS Amazing Point by KSecurities",
+            "third_party": "ks"
+        },
+        {
+            "id": "5d845734e7c60a1565dcb202",
+            "card_name": "MAJOR (M GEN)",
+            "composite_name": "[M GEN] MAJOR (M GEN)",
+            "third_party": "mgen"
+        },
+        {
+            "id": "5c91f932e5d9b51bec31ab19",
+            "card_name": "Muang Thai Insurance (KBank Channel)",
+            "composite_name": "[ MTI ] Muang Thai Insurance",
+            "third_party": "mti"
+        },
+        {
+            "id": "5d15afa9b68630c910645be5",
+            "card_name": "MTL Insurance Card",
+            "composite_name": "[ MTL ] MTL Insurance Card",
+            "third_party": "mtl"
+        },
+        {
+            "id": "5d15afc9b68630c910646273",
+            "card_name": "MTL Insurance Card",
+            "composite_name": "[ MTL ] Health And PA Rider",
+            "third_party": "mtl"
+        },
+        {
+            "id": "5d269be6653d35321d464c9f",
+            "card_name": "MTL Insurance Card",
+            "composite_name": "[ MTL ] Health",
+            "third_party": "mtl"
+        },
+        {
+            "id": "5a727bb39fda1b1c54601cf7",
+            "card_name": "PTT Blue Card",
+            "composite_name": "[ PTT ] Blue Card",
+            "third_party": "ptt"
+        },
+        {
+            "id": "5d1432c1e5d9b5190839287e",
+            "card_name": "Smile Point",
+            "composite_name": "[ MTL ] SMILE POINT",
+            "third_party": "smile"
+        },
+        {
+            "id": "5b149e87f137581ab4c93cab",
+            "card_name": "The 1",
+            "composite_name": "[ T1C ] The 1 Card",
+            "third_party": "t1c"
+        },
+        {
+            "id": "5d64ca18257b8a9671b92266",
+            "card_name": "VIZ CARD",
+            "composite_name": "[ VIZ ] VIZ CARD",
+            "third_party": "viz"
+        }
+    ]
+}

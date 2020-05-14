@@ -1,0 +1,27 @@
+{
+    "messageCode": "00",
+    "messageSubCode": "",
+    "messageDescription": "",
+    "data": [
+        {
+            "_id": "5dcd3d4321388d7692b0058d",
+            "redemption_type": "BILL_PAYMENT",
+            "created_at": "2019-11-14T18:40:51.206+07:00",
+            "RC_CD": "20000",
+            "EFF_DT": "2019-02-01T07:00:00+07:00",
+            "EN_CNTR_NM": "Commercial Credit and Housing Loan Product Management Department",
+            "EN_CNTR_NM_ABR": "LM.",
+            "TH_CNTR_NM": "ฝ่ายบริหารผลิตภัณฑ์สินเชื่อธุรกิจและที่อยู่อาศัย",
+            "TH_CNTR_NM_ABR": "ผล.",
+            "EFF_ST_CD": "Active",
+            "CRT_DT": "2007-10-01T00:00:00+07:00",
+            "END_DT": "Invalid date",
+            "LAST_UDT_DT": "2019-01-29T00:00:00+07:00",
+            "PPN_TMS": "2019-11-13T21:01:35+07:00",
+            "RC_TP_CD": "Old Organization deptid",
+            "KBNK_BR_NO": "",
+            "status": "AVAILABLE",
+            "rc_combine": "20000 ฝ่ายบริหารผลิตภัณฑ์สินเชื่อธุรกิจและที่อยู่อาศัย"
+        }
+    ]
+}

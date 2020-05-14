@@ -18,12 +18,6 @@ registerApplication({
   activeWhen: isActive.auth,
 });
 
-registerApplication({
-  name: "@mzsoft/kline-app",
-  app: () => System.import("@mzsoft/kline-app"),
-  activeWhen: isActive.isKline,
-});
-
 start();
 
 console.log("getMountedApps", getMountedApps());
