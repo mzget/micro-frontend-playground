@@ -4,7 +4,12 @@ import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
+  CreditCardOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+
+import { InstantRedemtion } from "constants/menusItems";
+import WithAuthState from "common/Enhancer/WithAuthState";
 
 const { SubMenu } = Menu;
 
@@ -19,7 +24,47 @@ class Sider extends React.Component<any> {
     console.log("click ", e);
   }
 
+  getSubMenuOrItem = (item) => {
+    if (item.children && item.children.some((child) => child.name)) {
+      const childrenItems = this.getNavMenuItems(item.children);
+      // hide submenu if there's no children items
+      if (childrenItems && childrenItems.length > 0) {
+        return (
+          <SubMenu title={item.name} key={item.path}>
+            {childrenItems}
+          </SubMenu>
+        );
+      }
+      return null;
+    } else {
+      return (
+        <Menu.Item key={item.path}>
+          <Link to={item.path}>
+            <span>{item.menuName || item.name}</span>
+          </Link>
+        </Menu.Item>
+      );
+    }
+  };
+
+  getNavMenuItems = (menusData) => {
+    if (!menusData) {
+      return [];
+    }
+    return menusData
+      .filter((item) => !item.hideInMenu)
+      .map((item) => {
+        // make dom
+        const ItemDom = this.getSubMenuOrItem(item);
+        return ItemDom;
+      })
+      .filter((item) => item);
+  };
+
   render() {
+    const { authState } = this.props;
+    const { auth } = authState;
+
     return (
       <Menu
         className="sidenav-content"
@@ -56,26 +101,23 @@ class Sider extends React.Component<any> {
           </Menu.Item>
         </SubMenu>
         <SubMenu
-          key="sub2"
+          key="/app/instant_redemption/kline"
           title={
             <span>
-              <MailOutlined />
-              <span>Navigation One</span>
+              <CreditCardOutlined />
+              <span className="nav-text">KLine</span>
             </span>
           }
         >
-          <Menu.ItemGroup key="g1" title="Item 1">
-            <Menu.Item key="1">Option 1</Menu.Item>
-            <Menu.Item key="2">Option 2</Menu.Item>
-          </Menu.ItemGroup>
-          <Menu.ItemGroup key="g2" title="Item 2">
-            <Menu.Item key="3">Option 3</Menu.Item>
-            <Menu.Item key="4">Option 4</Menu.Item>
-          </Menu.ItemGroup>
+          {this.getNavMenuItems(
+            InstantRedemtion.KLine.filter((item) =>
+              auth.auth?.includes(item.name)
+            )
+          )}
         </SubMenu>
       </Menu>
     );
   }
 }
 
-export default Sider;
+export default WithAuthState(Sider);
