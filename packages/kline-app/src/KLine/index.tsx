@@ -15,10 +15,10 @@ const CampaignInquiry = Loadable({
 //   loader: () => import("./CampaignDetail/Page/CampaignDetail"),
 //   loading: LoaderComponent,
 // });
-// const TransactionInquiry = Loadable({
-//   loader: () => import("./TransactionInquiry/Page/TransactionInquiry"),
-//   loading: LoaderComponent,
-// });
+const TransactionInquiry = Loadable({
+  loader: () => import("./TransactionInquiry/Page/TransactionInquiry"),
+  loading: LoaderComponent,
+});
 // const LimitInquiry = Loadable({
 //   loader: () => import("./LimitInquiry/Page/LimitInquiry"),
 //   loading: LoaderComponent,
@@ -51,8 +51,8 @@ const KLine = ({ match }) => (
         />
       )}
     />
-    {/* 
-    <Route
+
+    {/* <Route
       path={`${match.url}/campaign_detail/:id`}
       component={CampaignDetail}
     />
@@ -68,7 +68,7 @@ const KLine = ({ match }) => (
           component={permission ? SettingCampaign : Page404Wrapper}
         />
       )}
-    />
+    /> */}
 
     <PermissionEnhancer
       permissionName={KEY_PERMISSION.RE_KLINE_TRANSACTION_INQUIRY}
@@ -80,7 +80,7 @@ const KLine = ({ match }) => (
       )}
     />
 
-    <PermissionEnhancer
+    {/* <PermissionEnhancer
       permissionName={KEY_PERMISSION.RE_KLINE_LIMIT_INQUIRY}
       render={({ permission }) => (
         <Route
@@ -88,8 +88,8 @@ const KLine = ({ match }) => (
           component={permission ? LimitInquiry : Page404Wrapper}
         />
       )}
-    />
-
+    /> */}
+    {/* 
     <PermissionEnhancer
       permissionName={KEY_PERMISSION.RE_KLINE_SETTING_RC}
       render={({ permission }) => (
@@ -99,9 +99,9 @@ const KLine = ({ match }) => (
           component={permission ? AdminSetting : Page404Wrapper}
         />
       )}
-    />
+    /> */}
 
-    <PermissionEnhancer
+    {/* <PermissionEnhancer
       permissionName={KEY_PERMISSION.RE_KLINE_CREATE_RC}
       render={({ permission }) => (
         <Route
@@ -120,7 +120,7 @@ const KLine = ({ match }) => (
           component={permission ? AuditLog : Page404Wrapper}
         />
       )}
-    /> */}
+    />  */}
   </div>
 );
 

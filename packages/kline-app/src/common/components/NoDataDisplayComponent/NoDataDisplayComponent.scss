@@ -1,0 +1,16 @@
+.no-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    .icon {
+      font-size: 56px;
+      color: rgb(221, 221, 221);
+    }
+    .text {
+      margin-bottom: 0;
+      color: #afafaf;
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }

@@ -29,7 +29,8 @@
           "@mzsoft/angular-app": "http://localhost:4200/main.js",
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.3.4/lib/system/single-spa.min.js",
           "react": "https://cdn.jsdelivr.net/npm/react@16.13.0/umd/react.production.min.js",
-          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js"
+          "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.0/umd/react-dom.production.min.js",
+          "styled-components": "https://unpkg.com/styled-components/dist/styled-components.min.js"
         }
       }
     </script>
@@ -50,7 +51,7 @@
     <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js"></script>
     <% } %>
   </head>
-  <body>
+  <body style="overflow-y: hidden;">
     <script>
       System.import("@mzsoft/root-config");
       System.import("@mzsoft/auth-state");

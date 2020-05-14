@@ -2,29 +2,30 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { AppStateType } from "app/common/types";
 import { isArray } from "util";
+import UseAuthState from "../../common/Enhancer/UseAuthState";
 
 type PermissionItem = {
-    permission: boolean;
+  permission: boolean;
 };
 type PermissionEnhancerProps = {
-    permissionName: string | string[];
-    render: ({ permission }: PermissionItem) => any;
+  permissionName: string | string[];
+  render: ({ permission }: PermissionItem) => any;
 };
 
 function PermissionEnhancer({
-    render,
-    permissionName,
+  render,
+  permissionName,
 }: PermissionEnhancerProps) {
-    const { auth } = useSelector((state: AppStateType) => state.auth);
+  const { auth } = UseAuthState();
 
-    let permission = false;
-    if (isArray(permissionName)) {
-        permission = permissionName.some(v => auth.includes(v));
-    } else {
-        permission = auth.includes(permissionName);
-    }
+  let permission = false;
+  if (isArray(permissionName)) {
+    permission = permissionName.some((v) => auth.auth.includes(v));
+  } else {
+    permission = auth.auth.includes(permissionName);
+  }
 
-    return render({ permission });
+  return render({ permission });
 }
 
 export default React.memo(PermissionEnhancer);

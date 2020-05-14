@@ -72,7 +72,7 @@ class Sider extends React.Component<any> {
         onClick={this.handleClick}
         style={{ width: "100%" }}
         defaultSelectedKeys={["1"]}
-        defaultOpenKeys={["sub1"]}
+        defaultOpenKeys={["sub1", "instant_redemption/kline"]}
         mode="inline"
       >
         <SubMenu
@@ -101,7 +101,7 @@ class Sider extends React.Component<any> {
           </Menu.Item>
         </SubMenu>
         <SubMenu
-          key="/app/instant_redemption/kline"
+          key="instant_redemption/kline"
           title={
             <span>
               <CreditCardOutlined />

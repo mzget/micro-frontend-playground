@@ -10,7 +10,8 @@
       {
         "useESModules": true,
         "regenerator": false
-      }
+      },
+      "transform-class-properties"
     ]
   ]
 }
